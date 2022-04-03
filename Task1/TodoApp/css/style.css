@@ -1,0 +1,39 @@
+.background{
+    padding: 0.67em;
+    height: 732px;
+    background-color: #2060ca;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.todo{
+    background-color: #fff;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+}
+input{
+    padding: 5px 10px;
+    border-radius: 10px;
+    height: 30px;
+    margin: auto;
+}
+.button{
+    width: 100px;
+    background-color: #2b6cec;
+    color: #fff;
+    height: 45px;
+    margin: 0;
+    border: 0px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.todoInput{
+    color: #2e2642;
+    border: 2px solid #2c6bec;
+    font-size: 18px;
+}
