@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator</title>
+
+    <Link href = 'css/bootstrap-theme.min.css' rel="stylesheet">
+    <Link href = 'css/bootstrap.min.css' rel="stylesheet">
+    <link href = 'css/style.css' rel="stylesheet">    
+</head>
+<body>
+    <div class="container">
+        <img src="./images/logo.png" class="image">
+        <h2>Calculator</h2>
+        <div class="calculator">
+            <div id="display">
+                <p id="input">0</p>
+            </div>
+            <div>
+                <input type="button" value="AC" class="special" onclick="allClear()">
+                <input type="button" value="C" onclick="clear()">
+                <input type="button" value="%">
+                <input type="button" value="/" class="special" onclick="operations('/')" id="/">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="keys(7)" id="7">
+                <input type="button" value="8" onclick="keys(8)" id="8">
+                <input type="button" value="9" onclick="keys(9)" id="9">
+                <input type="button" value="*" class="special" onclick="operations('*')" id="*">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="keys(4)" id="4">
+                <input type="button" value="5" onclick="keys(5)" id="5">
+                <input type="button" value="6" onclick="keys(6)" id="6">
+                <input type="button" value="-" class="special" onclick="operations('-')" id="-">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="keys(1)" id="1">
+                <input type="button" value="2" onclick="keys(2)" id="2">
+                <input type="button" value="3" onclick="keys(3)" id="3">
+                <input type="button" value="+" class="special" onclick="operations('+')" id="+">
+            </div>
+            <div>
+                <input type="button" value="0" class="zero" onclick="keys(0)" id="0">
+                <input type="button" value="." onclick="keys()" onclick="keys('.')" id=".">
+                <input type="button" value="=" class="special" onclick="equals()">
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1960e975b6.js" crossorigin="anonymous"></script>
+    <script src='./js/bootstrap.min.js'></script>
+</body>
+</html>
