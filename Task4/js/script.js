@@ -37,15 +37,15 @@ function keys(n){
         display.append(input)
         char+=1
         if(!operationPressed){    
-            num1 = key;
+            num1 += key;
         }
         else{
             if (opPressed > 1){
                 num1 = calculate();
-                num2 = key;
+                num2 += key;
             }
             else{
-                num2 = key;
+                num2 += key;
             }
         }
     }
@@ -74,13 +74,21 @@ function calculate(){
     else if(op == "/"){
         if (num2>0){
             return num1 / num2;
-        }    
+        } 
+        else {
+            return NAN
+        }   
     }
 }
 
 function equals(){
     answer = calculate()
-    input.innerText = answer;
+    if (answer < 999999999){
+        input.innerText = answer;
+    }
+    else{
+        input.innerText = undefined
+    }
     answer = 0;
     operationPressed = false;
     num1 = "0"

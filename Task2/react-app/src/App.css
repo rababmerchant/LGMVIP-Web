@@ -1,5 +1,6 @@
-.App{
+.menu{
   margin: 20px 400px;
+  margin-bottom: 10px;
 }
 
 .App-logo {
@@ -19,22 +20,19 @@
   bottom: 30px;
 }
 
-.loader {
-  border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 50s linear infinite;
+h2{
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  height: 50px;
+  font-weight: normal;
+  padding-top: 10px;
+  margin: 0px 200px;
+  font-size: 28px;
 }
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
 .users{
   margin-bottom: 20px;
+  margin-right: 0px;
   display: flex;
   width: 350px;
 }
@@ -47,7 +45,7 @@
   border: #270059 solid 5px;
 }
 
-.users h2{
+.users h3{
   margin-bottom: 0px;
   color: #270059;
 }
@@ -59,8 +57,9 @@
 .profiles{
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 400px; 
 }
 
-.menu{
-  margin-bottom: 40px;
+.loader{
+  margin: 5px 48%;
 }
