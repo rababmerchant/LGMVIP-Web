@@ -17,14 +17,14 @@ function allClear(){
     char = 0
 }
 
-function clear(){
+function onClear(){
     console.log("hello")
     if (!operationPressed){
-        num1 = num1.slice(0,length.num1-1);
-        input.innerText = input.slice(0,length.num1-1);
+        num1 = num1.slice(0,num1.length-1);
+        input.innerText = input.innerText.slice(0,input.innerText.length-1);
     }
     else{
-        num2 = num2.slice(1,length.num2);
+        num2 = num2.slice(1,num2.length);
     }
 }
 
